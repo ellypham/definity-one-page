@@ -1,0 +1,65 @@
+//COMMON STYLES
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  max-width: 100%;
+  // margin-top: -20px;
+  font-family: $paraFont;
+  font-weight: $font-weight-regular;
+  color: red;
+  @include fontSize($font-size-regular);
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  padding: 5px;
+}
+
+h1{
+  @include fontSize($font-size-xx-large);
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+}
+
+h2, h3{
+  @include fontSize($font-size-large);
+  font-weight: $font-weight-regular;
+  text-transform: uppercase;
+
+}
+
+h4{
+  @include fontSize($font-size-regular);
+  text-transform: uppercase;
+}
+
+p{
+  color: darkGrey;
+}
+
+a{
+  color: red;
+}
+
+button, .button{
+  border: solid 1px black;
+  background: white;
+  padding: 10px;
+  text-transform: uppercase;
+  &:hover{
+    background: red;
+    color: white;
+    border-style: 1px solid red;
+  }
+}
+
+.container{
+  padding: 30px 0 30px 0;
+  width: 1100px;
+  max-width: 90%;
+  margin: 0 auto;
+}
